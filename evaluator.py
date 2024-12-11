@@ -21,7 +21,3 @@ def photo_analysis(command, topic):
     prompt = ChatPromptTemplate.from_template(command)
     chain = LLMChain(llm=llm, prompt=prompt)
     return chain.predict(input=topic)
-
-
-def judge(llm, prompt):
-    pass
